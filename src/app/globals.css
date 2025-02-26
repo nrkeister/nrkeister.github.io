@@ -1,21 +1,94 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Colors */
+  --white: #FFFFFF;
+  --accent: #FFED62;
+
+  --gray-1: #F6F5F8;
+  --gray-2: #EBEAEF;
+  --gray-3: #DBDAE2;
+  --gray-4: #CCCAD4;
+  --gray-5: #BCBBC7;
+  --gray-6: #94949F;
+  --gray-7: #6D6D77;
+  --gray-8: #47484E;
+  --gray-9: #222326;
+
+  --blue-1: #F6F2FF;
+  --blue-2: #D7CBFF;
+  --blue-3: #B2A2FB;
+  --blue-4: #8777F2;
+  --blue-5: #564CE0;
+  --blue-6: #2928B2;
+  --blue-7: #161B83;
+  
+
+  /* Sizes */
+  --size-0: 0rem;
+  --size-2: 0.125rem;
+  --size-4: 0.25rem;
+  --size-8: 0.5rem;
+  --size-12: 0.75rem;
+  --size-16: 1rem;
+  --size-24: 1.5rem;
+  --size-32: 2rem;
+  --size-40: 2.5rem;
+  --size-48: 3rem;
+  --size-56: 3.5rem;
+  --size-64: 4rem;
+  --size-72: 4.5rem;
+  --size-80: 5rem;
+
+  --fontsize-xs: 0.875rem;
+  --fontsize-s: 1rem;
+  --fontsize-m: 1.25rem;
+  --fontsize-l: 1.5rem;
+
+  --fontweight-reg: 400;
+  --fontweight-bold: 700;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.figtree {
+  font-family: var(--figtree);
+  font-optical-sizing: auto;
+  font-weight: var(--fontweight-reg);
+  font-size: var(--fontsize-m);
+  font-style: normal;
+}
+.regular { font-weight: var(--fontweight-reg); }
+.bold { font-weight: var(--fontweight-bold); }
+.fontsize-xs { font-size: var(--fontsize-xs); }
+.fontsize-s { font-size: var(--fontsize-s); }
+.fontsize-m { font-size: var(--fontsize-m); }
+.fontsize-l { font-size: var(--fontsize-l); }
+
+.dm-serif-text {
+  font-family: var(--dmSerifText);
+  font-weight: var(--fontweight-reg);
+  font-size: 2rem;
+  font-style: normal;
+}
+
+h1 {
+  font-family: var(--dmSerifText);
+  font-weight: var(--fontweight-reg);
+  font-size: var(--fontsize-l);
+  font-style: normal;
+}
+h2 {
+  font-family: var(--dmSerifText);
+  font-weight: var(--fontweight-reg);
+  font-size: 2rem;
+  font-style: normal;
+}
+h3 {
+  font-family: var(--dmSerifText);
+  font-weight: var(--fontweight-reg);
+  font-size: 2.25rem;
+  font-style: normal;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--figtree);
+  color: var(--gray-9);
+  background: var(--white);
 }

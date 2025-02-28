@@ -1,7 +1,11 @@
-import "./globals.css";
-
-const intro = 'I\'m both a skilled designer and engineer, but my greatest strength is my drive to understand people at their core and my innate compassion for their experiences.';
+import text from './utils/text';
+import './globals.css';
 
 export default function Home() {
-  return (<div>{intro}</div>);
-}
+  return (
+    <div>
+      <div>{text.homepage.jobTitle}</div>
+      <div>{text.homepage.intro}</div>
+    </div>
+  );
+};

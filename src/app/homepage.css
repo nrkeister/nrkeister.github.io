@@ -1,0 +1,32 @@
+.homebio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--size-24);
+    align-self: stretch;
+    margin-top: var(--size-16);
+    color: var(--gray-8);
+}
+
+.homebio .job-title {
+    font-size: var(--fontsize-l);
+}
+
+.homebio .intro-button-container {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--size-16);
+    align-self: stretch;
+}
+.homebio .intro {
+    font-size: var(--fontsize-m);
+}
+.homebio button {
+    text-wrap: nowrap;
+}
+
+.homebio .locations {
+    display: flex;
+    align-items: center;
+    gap: var(--size-12);
+}

@@ -23,6 +23,7 @@
   
 
   /* Sizes */
+  /* Based on figma designs, which use pixels */
   --size-0: 0rem;
   --size-2: 0.125rem;
   --size-4: 0.25rem;
@@ -61,12 +62,6 @@
   font-size: var(--fontsize-m);
   font-style: normal;
 }
-.regular { font-weight: var(--fontweight-reg); }
-.bold { font-weight: var(--fontweight-bold); }
-.fontsize-xs { font-size: var(--fontsize-xs); }
-.fontsize-s { font-size: var(--fontsize-s); }
-.fontsize-m { font-size: var(--fontsize-m); }
-.fontsize-l { font-size: var(--fontsize-l); }
 
 .dm-serif-text {
   font-family: var(--dmSerifText);

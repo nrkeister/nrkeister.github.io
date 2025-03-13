@@ -38,10 +38,17 @@
   --size-72: 4.5rem;
   --size-80: 5rem;
 
-  --fontsize-xs: 0.875rem;
-  --fontsize-s: 1rem;
-  --fontsize-m: 1.25rem;
-  --fontsize-l: 1.5rem;
+  --corner-xs: 4px;
+  --corner-s: 8px;
+  --corner-m: 12px;
+  --corner-l: 16px;
+  --corner-xl: 28px;
+  --corner-full: 1000px;
+
+  --fontsize-xs: 0.875rem;  /* 14px */
+  --fontsize-s: 1rem;       /* 16px */
+  --fontsize-m: 1.25rem;    /* 20px */
+  --fontsize-l: 1.5rem;     /* 24px */
 
   --fontweight-reg: 400;
   --fontweight-bold: 700;
@@ -85,5 +92,13 @@ body {
 }
 a {
   text-decoration: none;
+  color: var(--gray-7);
+  -webkit-transition: color .2s;
+  -moz-transition:    color .2s;
+  -ms-transition:     color .2s;
+  -o-transition:      color .2s;
+  transition:         color .2s;
+}
+a:hover{
   color: var(--gray-9);
 }

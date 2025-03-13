@@ -1,7 +1,11 @@
 import React from 'react';
 import './globals.css';
+import './pagebody.css';
 import Navbar from './components/navbar';
-import { figtree } from './utils/fonts'
+import { figtree } from './utils/fonts';
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+config.autoAddCss = false
 
 export default function RootLayout({
   children,
@@ -10,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={figtree.className}>
-      <body>
+      <body className="pagebody">
         <Navbar />
         {children}
       </body>

@@ -2,7 +2,9 @@ import Link from 'next/link';
 import React from 'react';
 import text from '../utils/text';
 import './navbar-style.css';
-import { dmSerifText } from '../utils/fonts'
+import { dmSerifText } from '../utils/fonts';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar: React.FC = () => {
   return (
@@ -12,14 +14,17 @@ const Navbar: React.FC = () => {
       </div>
       <ul className="nav-links">
         <li className="nav-dropdown">
-            <Link className="nav-dropdown-top" href="/">Case Studies v</Link> 
+            <Link className="nav-dropdown-top" href="/">
+              Case Studies
+              <FontAwesomeIcon icon={faCaretDown} className="fa-fw caret" />
+            </Link> 
             <div className="nav-dropdown-list">
                 <Link href="lh-categories">LH Categories</Link>
                 <Link href="lh-cart">LH Cart</Link>
             </div>
         </li>
         <li>
-            <Link href="about">About Me</Link>
+          <Link href="about">About Me </Link>
         </li>
       </ul>
     </nav>

@@ -1,0 +1,7 @@
+.pagebody {
+    display: flex;
+    width: 70rem;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-80);
+  }
